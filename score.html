@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Registrar Score</title>
+</head>
+
+<body>
+    <header>
+        <h1>Score</h1>
+    </header>
+    <div id="secondHeader">
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./audience.html">Audience</a></li>
+            <li><a href="./client.html">Client</a></li>
+            <li><a href="./message.html">Message</a></li>
+            <li><a href="./category.html">Category</a></li>
+            <li><a href="./reservation.html">Reservation</a></li>
+            <li><a href="./score.html">Score</a></li>
+            <li><a href="./admin.html">Admins</a></li>
+        </ul>
+    </div>
+    <form>
+        <div style="text-align: center;">
+
+            <input type="number" id="score" placeholder="score" required><br>
+            <input type="text" id="messageScore" placeholder="messageScore"><br><br>
+        </div>
+    </form>
+    <div style="text-align: center;">
+        <button onclick="obtenerInformacionScore()"> Consultar </button>
+        <button onclick="guardarInformacionScore()"> Guardar </button>
+    </div><br><br>
+    <div id="resultadoS"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
